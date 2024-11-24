@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/config.css"/>
+    <script src="scripts/endpointers.js" defer></script>
+    <script src="scripts/configRedirecionador.js" defer></script>
+    <script src="scripts/configMeusPedidos.js" defer></script>
+    <script src="scripts/configAlterarSenha.js" defer></script>
+    <script src="scripts/configAlterarCelular.js" defer></script>
+    <script src="scripts/configAlterarProdutos.js" defer></script>
+    <script src="scripts/fazerLogout.js" defer></script>
+    <title>Configurações</title>
+</head>
+<body>
+    <div class="container">
+        <div class="div-canto-esquerdo">
+            <div class="div-voltar-config">
+                <a class="a-voltar-loja" href="loja.html"><img src="imgs/seta-voltar.svg"></a>
+                <h1>Configurações</h1>
+            </div>
+            
+            <div class="div-btns">
+                <button type="button" class="btn-meus-pedidos">Meus pedidos</button>
+                <button type="button" class="btn-alterar-senha">Alterar senha</button>
+                <button type="button" class="btn-alterar-celular">Alterar celular</button>
+            </div>
+            <a class="a-logout"><img src="imgs/logout-icone.svg" id="img-logout">Encerrar sessão</a>
+        </div>
+        <div class="div-central">
+
+        </div>
+    </div>
+    <div  class="div-modal">
+        <div class="div-modal-central">
+            <h2>Confirmação de celular</h2>
+            <p>Enviamos um código de confirmação para novo celular,<br> por favor nos informe!</p>
+            <div>
+                <label>Código:</label>
+                <input type="email" name="confirmar-codigo" id="input-codigo-modal"/>
+            </div>
+            <button type="button" id="btn-enviar">ENVIAR</button>
+        </div>
+        <div class="div-modal-canto-direito">
+            <button type="button" id="btn-fechar-modal">X</button>
+        </div>
+    </div>
+    <div  class="div-fade"></div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/cadastro.css"/>
+    <script src="scripts/cadastro.js" defer></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="div-canto-esquerdo">
+            <img src="imgs/logo-fazenda.png">
+            <a href="login.html"><button type="button" id="btn-fazer-login">FAZER LOGIN</button></a>
+            <a href="loja.html"><h2>Ir para a loja</h2></a>
+        </div>
+        <div class="div-central">
+            <form>
+                <div class="div-input">
+                    <label>Nome</label>
+                    <input type="text" name="cadastro" id="input-nome"/>
+                </div>
+                <div class="div-input-agrupado">
+                    <div class="div-input">
+                        <label>CPF</label>
+                        <input type="text/number" name="cadastro" id="input-cpf" maxlength="11"/>
+                    </div>
+                    <div class="div-input">
+                        <label>Celular</label>
+                        <input type="text/number" name="cadastro" id="input-celular" maxlength="11"/>
+                    </div>
+                </div>
+                <div class="div-input">
+                    <label>Email</label>
+                    <input type="email" name="cadastro" id="input-email"/>
+                </div>
+                <div class="div-input-agrupado">
+                    <div class="div-input">
+                        <label>Senha</label>
+                        <input type="password" name="cadastro" id="input-senha"/>
+                    </div>
+                    <div class="div-input">
+                        <label>Confirme sua senha</label>
+                        <input type="password" name="cadastro" id="input-confirmacao-senha"/>
+                    </div>
+                </div>
+                <button type="button" id="btn-confirmar">Confirmar</button>
+            </form>
+        </div>
+    </div>
+    <div  class="div-modal">
+        <div class="div-modal-central">
+            <h2>Confirmação de email</h2>
+            <p>Enviamos um código de confirmação para seu email,<br> por favor nos informe!</p>
+            <div>
+                <label>Código:</label>
+                <input type="email" name="confirmar-codigo" id="input-codigo"/>
+            </div>
+            <button type="button" id="btn-enviar">ENVIAR</button>
+        </div>
+        <div class="div-modal-canto-direito">
+            <button type="button" id="btn-fechar-modal">X</button>
+        </div>
+    </div>
+    <div  class="div-fade"></div>
+</body>
+</html>

@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+/*parte do canto esquerdo da tela*/
+
+.div-canto-esquerdo{
+    width: 25%;
+    height: 100%;
+    background-image: linear-gradient(225deg, #3BB1F5, #D9F0FD);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div-voltar-config{
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+    width: 100%;
+    justify-content: left;
+}
+
+.a-voltar-loja{
+    cursor: pointer;
+    margin-left: 10%;
+}
+
+.a-voltar-loja img{
+    width: 50px;
+    height: 50px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    letter-spacing: 2px;
+    text-shadow: #2a6d94 0.1em 0.1em 0.2em;
+    margin-left: 10%;
+
+}
+
+.div-btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.div-btns button{
+    border: none;
+    background-color: white;
+    margin-bottom: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #70c6f8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.a-logout{
+    margin-bottom: 10%;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.a-logout img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+/*parte central da tela*/
+
+.div-central{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.msg-erro-produtos{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.erro-pedidos{
+    font-size: 26px;
+}
+
+.div-inputs, .div-alt-celular, .div-alt-produtos{
+    border: solid 1px;
+    padding: 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+table{
+    border: solid 1px;
+    border-collapse: collapse;
+    font-size: 18px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+th{
+    text-align: center;
+    height: 50px;
+    background-color: #3BB1F5;
+    color: white;
+    margin-left: 5px;
+}
+
+td{
+    width: 200px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.td-id{
+    width: 100px;
+}
+
+.div-inputs label, .div-alt-celular label, .div-input-editar label, .div-text-area-editar label, .div-input-add label, .div-text-area-add label{
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+
+.div-input, .div-input-editar, .div-text-area-editar, .div-input-add, .div-text-area-add{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+.div-input input, .div-input-editar input, .div-input-add input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px;
+    font-size: 16px;
+}
+
+.btn-confirmar-alterar-senha, .btn-confirmar-alterar-celular, .btn-confirmar-edicao, .btn-confirmar-adicao{
+    padding: 10px 20px;
+    width: 60%;
+    border: none;
+    margin-left: 20%;
+    margin-top: 30px;
+    background-color: #3BB1F5;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.btn-add, .btn-edt, .btn-exc{
+    padding: 10px 20px;
+    margin-left: 10%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 80%;
+    border: none;
+    background-color: #3BB1F5;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+
+
+/*  parte do editar produto*/
+
+
+
+.div-produto-para-editar{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.div-produto-para-editar img{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.div-text-area-editar textarea, .div-text-area-add textarea{
+    width: 100%;
+    height: 10vh;
+    border-radius: 5px;
+    border: solid 1px;
+    font-size: 16px;
+}
+
+/*Parte do excluir produto*/
+
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.input-pesquisar-produto{
+    height: 30px;
+    font-size: 16px;
+}
+
+.div-produtos{
+    border: solid 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+
+.div-produto-para-excluir{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.input-select{
+    margin-left: 5%;
+    margin-right: 10px;
+}
+
+
+
+.div-produto-para-excluir img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10%;
+}
+
+
+
+.btn-confirmar-exclusao{
+    border: none;
+    background-color: #3BB1F5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.div-pergunta{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border: solid 1px;
+    background-color: white;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-pergunta label{
+    font-size: 20px;
+    margin: 10px 20px;
+}
+.div-pergunta div{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.div-pergunta button{
+    border: none;
+    background-color: #3BB1F5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+
+/*parte do modal do alterar celular*/
+.hide{
+    display: none;
+}
+
+.div-modal{
+    width: 800px;
+    height: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    z-index: 10;
+}
+
+.div-modal-central{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(225deg, #3BB1F5, #D9F0FD);
+    width: 80%;
+}
+
+.div-modal-canto-direito{
+    width: 20%;
+    display: inline;
+    padding-left: 70px;
+    padding-top: 10px;
+    background-color: white;
+}
+
+.div-modal-central h2{
+    padding-top: 20px;
+    margin-bottom: 40px;
+    color: white;
+    font-size: 40px;
+}
+
+.div-modal-central p{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    color: white;
+}
+
+#btn-fechar-modal{
+    border: none;
+    background-color: #51a5da;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    color: white;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#btn-enviar{
+    width: 25%;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    background-color: white;
+    color: #70c6f8;
+    cursor: pointer;
+}
+
+#input-codigo-modal, #input-codigo-modal:focus{
+    border: none;
+    outline: 0;
+    height: 30px;
+    width: 280px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.div-modal-central div{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.div-modal-central label{
+    color: white;
+}
+
+.div-fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    z-index: 5;
+    backdrop-filter: blur(5px);
+}

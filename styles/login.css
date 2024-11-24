@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.div-canto-esquerdo{
+    display: flex;
+    background-image: linear-gradient(225deg, #3BB1F5, #D9F0FD);
+    width: 25%;
+    height: 100%;
+}
+
+.div-central{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-central a{
+    text-decoration: none;
+    color: black;
+    margin-top: 30%;
+}
+
+.div-central h2{
+    font-size: 30px;
+}
+
+.div-central h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#p-login{
+    color: white;
+    font-size: 80px;
+    text-shadow: #2a6d94 0.1em 0.1em 0.2em;
+    text-align: center;
+}
+
+label{
+    color: white;
+    font-size: 30px;
+    text-shadow: #2a6d94 0.1em 0.1em 0.2em;
+}
+
+p{
+    color: white;
+}
+
+ input:focus,input{
+    outline: 0;
+    border: none;
+    box-shadow: none;
+    height: 20px;
+}
+
+.div-email{
+    display: flex;
+    align-items: center;
+}
+
+.div-senha{
+    display: flex;
+    align-items: center;
+}
+
+.div-inputs{
+    margin-top: 50px;
+    padding-left: 35px;
+    margin-bottom: 50px;    
+}
+
+#input-email{
+    margin-left: 23px;
+    height: 30px;
+    width: 280px;
+}
+
+#input-senha{
+    margin-left: 15px;
+    margin-top: 15px;
+    height: 30px;
+    width: 280px;
+}
+
+.div-buttons{
+    margin-left: 140px;
+}
+
+button{
+    border: none;
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    color: #70c6f8;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#btn-entrar{
+    margin-bottom: 30px;
+}
+
+#p-recuperar-senha{
+    text-align: end;
+    margin-top: 5px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+.div-modal{
+    width: 800px;
+    height: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    z-index: 10;
+}
+
+.div-modal-central{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(225deg, #3BB1F5, #D9F0FD);
+    width: 80%;
+}
+
+.div-modal-canto-direito{
+    width: 20%;
+    display: inline;
+    padding-left: 70px;
+    padding-top: 10px;
+    background-color: white;
+}
+
+.div-modal-central h2{
+    padding-top: 20px;
+    margin-bottom: 40px;
+    color: white;
+    font-size: 40px;
+}
+
+.div-modal-central p{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+#btn-fechar-modal{
+    background-color: #51a5da;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    color: white;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+#btn-enviar{
+    width: 25%;
+    border-radius: 5px;
+}
+
+#input-email-recuperacao{
+    height: 30px;
+    width: 280px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.div-modal-central div{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.div-fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    z-index: 5;
+    backdrop-filter: blur(5px);
+}

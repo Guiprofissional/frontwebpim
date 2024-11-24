@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.div-container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.div-canto-esquerdo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(225deg, #3BB1F5, #D9F0FD);
+    width: 25%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#img-logo{
+    margin-top: 34px;
+}
+
+.div-formas-de-pagamento{
+    width: 80%;
+}
+
+.div-formas-de-pagamento p{
+    font-size: 24px;
+    margin-top: 2px;
+    text-align: center;
+}
+
+.div-formas-de-pagamento div{
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    border: solid 1px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.div-formas-de-pagamento input{
+    margin-left: 15%;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+.div-buttons{
+    width: 50%;
+    margin-bottom: 34px;
+}
+
+.div-canto-esquerdo a{
+    width: 100%;
+}
+
+.div-canto-esquerdo a button{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    height: 60px;
+    font-size: 20px;
+    margin-top: 10px;    
+    cursor: pointer;
+    color: #70c6f8;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.div-central{
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    position: relative;
+    top: 220px;
+    border: solid 1px;
+    border-collapse: collapse;
+    font-size: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+th{
+    text-align: center;
+    height: 50px;
+    background-color: #3BB1F5;
+    color: white;
+    margin-left: 5px;
+}
+
+td{
+    width: 300px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.td-nome{
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.td-nome span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.td-qtd{
+    text-align: center;
+}
+
+table button{
+    border: none;
+    background-color: #3BB1F5;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.div-formas-de-pagamento img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5%;
+}
+
+td img{
+    width: 40px;
+    height: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.td-preco span, #span-total{
+    margin-left: 35%;
+}
+
+p{
+    margin-top: 55%;
+    font-size: 26px;
+    color: white;
+    margin-bottom: 5%;
+    text-shadow: #2a6d94 0.1em 0.1em 0.2em;
+}
+
+caption {
+    font-size: 30px;
+    margin-bottom: 3%;
+}

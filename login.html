@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/login.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scripts/configRedirecionadorLogin.js"></script>
+    <script src="scripts/endpointers.js" defer></script>
+    <script src="scripts/fazerLogin.js" defer></script>
+    <script src="scripts/recuperarSenha.js" defer></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="div-canto-esquerdo">
+            <form class="form">
+                <p id="p-login">LOGIN</p>
+                <div class="div-inputs">
+                    <div class="div-email">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email"  id="input-email"/>
+                    </div>
+                    <div class="div-senha">
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" id="input-senha"/>
+                    </div>
+                </div>
+                <div class="div-buttons">
+                    <p>Já possui um cadastro?</p>
+                    <button type="button" id="btn-entrar">ENTRAR</button>
+                    <p>Ou se não</p>
+                    <a href="cadastro.html"><button type="button" id="btn-cadastrar">CADASTRE-SE</button></a>
+                    <p id="p-recuperar-senha">Recuperar Senha</p>
+                </div>
+            </form>
+        </div>
+        <div class="div-central">
+            <h1>Bem vindo <br/>ao <br/><img src="imgs/logo-fazenda.png"></h1>
+            <a href="loja.html"><h2>Ir para a loja</h2></a>
+        </div>
+    </div>
+    <div class="div-modal">
+        <div class="div-modal-central">
+            <h2>RECUPERAR ACESSO</h2>
+            <p class="p-recuperacao">Olá, para prosseguir com a recuperação precisamos que <br>nos informe seu email cadastrado!</p>
+            <div>
+                <label for="email-recuperacao" class="label-email-recuperacao">Email:</label>
+                <input type="email" name="email-recuperacao" id="input-email-recuperacao"/>
+            </div>
+            <button type="button" id="btn-enviar">ENVIAR</button>
+        </div>
+        <div class="div-modal-canto-direito">
+            <button type="button" id="btn-fechar-modal">X</button>
+        </div>
+    </div>
+    <div class="div-fade"></div>
+</body>
+</html>

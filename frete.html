@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/frete.css">
+    <script src="scripts/configRedirecionador.js" defer></script>
+    <script src="scripts/frete.js" defer></script>
+    <title>Frete</title>
+</head>
+<body>
+    <div class="div-container">
+        <div class="div-canto-esquerdo">
+            <img src="imgs/logo-fazenda.png">
+            <div class="div-valores">
+                <div class="div-total-produtos">
+                    <span>Produtos:</span>
+                    <span id="span-total-produtos">R$ 200.52</span>
+                </div>
+                <div class="div-valor-frete">
+                    <span>Frete:</span>
+                    <span id="span-valor-frete">R$ 0.00</span>
+                </div>
+                <div class="div-total-somado">
+                    <span>TOTAL:</span>
+                    <span id="span-total-somado">R$ 214.02</span>
+                </div>
+            </div>
+            <div class="div-buttons">
+                <a href="carrinho.html"><button class="btn-voltar-para-carrinho" type="button">Voltar</button></a>
+                <a><button class="btn-voltar-para-carrinho" type="button">Finalizar Compra</button></a>
+            </div>
+        </div>
+        <div class="div-central">
+            <div class="div-frete">
+                <h2>Endereço de Entrega</h2>
+                <div class="div-logradouro-numero">
+                    <div class="div-logradouro">
+                        <label>Logradouro *</label>
+                        <input type="text/number" id="input-logradouro">
+                    </div>
+                    <div class="div-numero">
+                        <label>Número</label>
+                        <input type="text/number" id="input-numero">
+                    </div>
+                </div>
+                <div class="div-bairro-cep">
+                    <div class="div-bairro">
+                        <label>Bairro *</label>
+                        <input type="text/number" id="input-bairro">
+                    </div>
+                    <div class="div-cep">
+                        <label>CEP *</label>
+                        <input type="text/number" id="input-cep">
+                    </div>
+                </div>
+                <div class="div-complemento">
+                    <label>Complemento</label>
+                    <input type="text/number" id="input-complemento">
+                </div>
+                <button type="button" class="btn-calcular-frete">Calcular Frete</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
