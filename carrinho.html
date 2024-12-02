@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/carrinho.css"/>
+    <script src="scripts/configRedirecionador.js" defer></script>
     <script src="scripts/carrinho.js" defer></script>
     <title>Carrinho</title>
 </head>
@@ -15,24 +16,24 @@
             <div class="div-formas-de-pagamento">
                 <p>Escolha sua forma de pagamento</p>
                 <div class="cartao-credito">
-                    <input type="radio" name="forma-pagamento" id="input-cartao-credito" value="cartao-credito">
+                    <input type="radio" name="forma-pagamento" id="input-cartao-credito" value="CARTAO_CREDITO">
                     <img src="imgs/cartao.png">
                     <label for="input-cartao-credito"><span>Cartão de Crédito</span></label>
                 </div>
                 <div class="boleto">
-                    <input type="radio" name="forma-pagamento" id="input-boleto" value="boleto">
+                    <input type="radio" name="forma-pagamento" id="input-boleto" value="BOLETO">
                     <img src="imgs/boleto.png">
                     <label for="input-boleto"><span>Boleto</span></label>
                 </div>
                 <div class="pix">
-                    <input type="radio" name="forma-pagamento" id="input-pix" value="pix" checked>
+                    <input type="radio" name="forma-pagamento" id="input-pix" value="PIX" checked>
                     <img src="imgs/pix-preto.png">
                     <label for="input-pix"><span>Pix</span></label>
                 </div>
             </div>
             <div class="div-buttons">
-                <a href="loja.html"><button type="button" id="btn-voltar">Voltar</button></a>
                 <a><button type="button" id="btn-finalizar-compra">Finalizar Compra</button></a>
+                <a href="loja.html"><button type="button" id="btn-voltar">Voltar</button></a>
             </div>
         </div>
         <div class="div-central">

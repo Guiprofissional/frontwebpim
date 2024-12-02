@@ -77,7 +77,3 @@ btnFecharModal.addEventListener("click",function fecharModal(){
     //tirando a acao do btnEnviar para nao haver erro de duplicaçao de eventlistener
     btnEnviar.removeEventListener("click",enviar);
 });
-
-//erro ta acontecendo porque ele ta adicionando eventlistener a cada rodada que fecha o modal e abre denovo , fazer remove listener dos addeventlisteners toda vez que fechar modal
-//entao cria funcoes separadas e chamalas nos addenevtlsitener e excluila no removeeventlisteners
-//e fazer isso em todos modais do site no cadastro.html acho q ja ta feito falta no login talvez

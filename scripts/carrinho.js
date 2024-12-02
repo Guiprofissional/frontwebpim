@@ -99,7 +99,7 @@ criaTabela();
 btnFinalizarCompra.addEventListener("click",(e)=>{
     e.preventDefault();
     //verificando se esta cliente esta logado, se sim, segue para digitar frete, se nao, segue para fazer login
-    if(sessionStorage.getItem("usuarioLogado") == null){
+    if(sessionStorage.getItem("dadosUsuario") == null){
         alert("Você precisa primeiro fazer login!");
         location.href = "login.html";
         return;

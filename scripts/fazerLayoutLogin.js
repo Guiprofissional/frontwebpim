@@ -1,6 +1,6 @@
 //fazer layout da loja com usuario logado caso houver logado
-if(sessionStorage.getItem("usuarioLogado") != null){
-    let usuario = JSON.parse(sessionStorage.getItem("usuarioLogado"));
+if(sessionStorage.getItem("dadosUsuario") != null){
+    let nomeUsuario = JSON.parse(sessionStorage.getItem("dadosUsuario")).name;
     
     let divUsuario = document.querySelector(".div-nav-direita-usuario");
     let a = divUsuario.querySelector("a");
@@ -10,7 +10,7 @@ if(sessionStorage.getItem("usuarioLogado") != null){
     pNomeUsuario.classList.add("p-nome-usuario");
     divUsuario.appendChild(pNomeUsuario);
     //tirando exibiçao do sobrenome
-    pNomeUsuario.innerHTML = "Bem-vindo<br>" + usuario.nome.substring(0,usuario.nome.indexOf(" "));
+    pNomeUsuario.innerHTML = "Bem-vindo<br>" + nomeUsuario.substring(0,nomeUsuario.indexOf(" "));
 
     let imgUsuario = document.createElement("img");
     imgUsuario.setAttribute("src","imgs/usuario-icone.svg");

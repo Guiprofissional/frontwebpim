@@ -4,9 +4,16 @@ let listaProdutosEmEstoque=[];
 
 //buscando produtos do estoque na api
 async function buscaProdutosEmEstoque(){
-    let listaProdutos = await fetch(endpointProdutosEstoque)
+    let listaProdutos = await fetch(endpointProdutosEstoque,{
+        headers:{
+            "Authorization":`Bearer ${JSON.parse(sessionStorage.getItem("dadosUsuario")).token}`
+        }
+    })
     .then((res)=>res.json())
-    .catch(()=>msgFalhaProdutos());
+    .catch(() => {
+        msgFalhaProdutos();
+        return;
+    });
     //convertendo nomes da propriedades do json vindo da api
 
     listaProdutos.forEach(element => {

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/frete.css">
+    <script src="scripts/endpointers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="scripts/configRedirecionador.js" defer></script>
     <script src="scripts/frete.js" defer></script>
     <title>Frete</title>
@@ -19,16 +21,16 @@
                 </div>
                 <div class="div-valor-frete">
                     <span>Frete:</span>
-                    <span id="span-valor-frete">R$ 0.00</span>
+                    <span id="span-valor-frete">Grátis</span>
                 </div>
                 <div class="div-total-somado">
                     <span>TOTAL:</span>
-                    <span id="span-total-somado">R$ 214.02</span>
+                    <span id="span-total-somado"></span>
                 </div>
             </div>
             <div class="div-buttons">
                 <a href="carrinho.html"><button class="btn-voltar-para-carrinho" type="button">Voltar</button></a>
-                <a><button class="btn-voltar-para-carrinho" type="button">Finalizar Compra</button></a>
+                
             </div>
         </div>
         <div class="div-central">
@@ -58,7 +60,7 @@
                     <label>Complemento</label>
                     <input type="text/number" id="input-complemento">
                 </div>
-                <button type="button" class="btn-calcular-frete">Calcular Frete</button>
+                <button type="button" class="btn-fazer-pedido">Fazer Pedido</button>
             </div>
         </div>
     </div>
