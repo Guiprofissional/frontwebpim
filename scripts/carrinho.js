@@ -80,11 +80,26 @@ function criaTabela(){
     let tbody = document.createElement("tbody");
     let table = document.querySelector("table");
     table.appendChild(tbody);
+
     let total = 0;
+
+    //tirando a tabela padrao caso não tenha produto no carrinho e colocando mensagem
+    if(listaProdutosDoCarrinho == null || listaProdutosDoCarrinho.length == 0){
+        let divCentro = document.querySelector(".div-central");
+        divCentro.removeChild(table);
+        console.log("carrinho vazio");
+        let h2CarrinhoVazio = document.createElement("h2");
+        h2CarrinhoVazio.innerHTML = "Carrinho vazio";
+        divCentro.appendChild(h2CarrinhoVazio);
+        h2CarrinhoVazio.classList.add("h2-carrinho-vazio");
+        return;
+    }
+
     for(let i = 0; i < listaProdutosDoCarrinho.length; i++){
         tbody.appendChild(criaTr(listaProdutosDoCarrinho[i]));
         total += (parseFloat(listaProdutosDoCarrinho[i].preco) * parseFloat(listaProdutosDoCarrinho[i].qtd));
     }
+
     spanTotal.innerHTML = `R$ ${total.toFixed(2)}`;
 }
 
@@ -98,10 +113,10 @@ criaTabela();
 
 btnFinalizarCompra.addEventListener("click",(e)=>{
     e.preventDefault();
-    //verificando se esta cliente esta logado, se sim, segue para digitar frete, se nao, segue para fazer login
-    if(sessionStorage.getItem("dadosUsuario") == null){
-        alert("Você precisa primeiro fazer login!");
-        location.href = "login.html";
+
+    //Forçando a seleção de produto para o acesso a finalização do pedido
+    if(listaProdutosDoCarrinho == null || listaProdutosDoCarrinho.length == 0){
+        alert("Selecione ao menos 1 produto ao carrinho!");
         return;
     }
 

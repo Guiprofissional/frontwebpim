@@ -173,3 +173,8 @@ caption {
     font-size: 30px;
     margin-bottom: 3%;
 }
+
+.h2-carrinho-vazio{
+    position: absolute;
+    top: 400px;
+}

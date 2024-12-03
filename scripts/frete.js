@@ -3,7 +3,7 @@ let cliente = JSON.parse(sessionStorage.getItem("dadosUsuario"));
 let tipoDePagamento = sessionStorage.getItem("tipoDePagamento");
 
 //forçando o pedido a ter no minimo 1 produto
-if(listaDoCarrinho == null){
+if(listaDoCarrinho == null || listaDoCarrinho.length == 0){
     alert("Você tem de adicionar ao menos 1 produto!");
     location.href = "loja.html";
 }

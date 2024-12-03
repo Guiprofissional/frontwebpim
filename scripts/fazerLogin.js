@@ -32,7 +32,12 @@ btnEntrar.addEventListener("click",()=>{
             sessionStorage.setItem("dadosUsuario",JSON.stringify(res.data));
             location.href = "loja.html";
         })
-        .catch(() => alert("Email e/ou senha inválidos!"));
+        .catch((error) => {
+            if(error.code == "ERR_NETWORK"){
+                alert("Error no servidor!");
+                return;
+            }
+        });
     }
     
     fazerLoginApi();
